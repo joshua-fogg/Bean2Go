@@ -3,49 +3,57 @@
     <meta charset="utf-8">
     <!--  FONT    -->
     <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
-    <link href="css/main.css" ref="stylesheet">
-    <script="java/js.js">
     <title> BeanGo </title>
   </head>
-  <body>
+<body>
+
+  <!--  Banner  -->
+ <div class="banner">
+  <a href="#home">Bean2Go</a>
+  <a href="#news">Client</a>
+  <a href="#contact">Business Owners</a>
+  <a href="#about">Contact</a>
+</div>
+
+
   <!--  Navigation Bar -->
-    <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'Brand')">Brand</button>
-      <button class="tablinks" onclick="openCity(event, 'CoffeeShop')">Coffee Shop</button>
-      <button class="tablinks" onclick="openCity(event, 'Variety')">Variety</button>
-      <button class="tablinks" onclick="openCity(event, 'Order')">Place Order</button>
-      <button class="tablinks" onclick="openCity(event, 'OrderCustomize')">Customize</button>
-      <button class="tablinks" onclick="openCity(event, 'OrderReview')">Order Review</button>
-      <button class="tablinks" onclick="openCity(event, 'PaymentScrn')">Payment Options</button>
-    </div>
-  <!--  Content Divs  -->
-    <div id="Brand" class="tabcontent">
-      <h3>The AJ Brand</h3>
-      <p>London is the capital city of England.</p>
-    </div>
-    <div id="CoffeeShop" class="tabcontent">
-      <h3>AJs Coffee Shop</h3>
-      <p>Paris is the capital of France.</p>
-    </div>
-    <div id="Variety" class="tabcontent">
-      <h3>Coffee Range:</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
-    <div id="Order" class="tabcontent">
-      <h3>What Can We Get For You?</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
-    <div id="OrderCustomize" class="tabcontent">
-      <h3>Add Some Personality!</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
-    <div id="OrderReview" class="tabcontent">
-      <h3>Have We Got It Right So Far?</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
-    <div id="PaymentScrn" class="tabcontent">
-      <h3>Payment</h3>
-      <p>Tokyo is the capital of Japan.</p>
-    </div>
-  </body>
-  </html>
+  <div class="tab">
+    <button class="tablink" onclick="openCity('Brand', this, 'red')"id="defaultOpen">Brand</button>
+    <button class="tablink" onclick="openCity('CoffeeShop', this, 'green')">Coffee Shop</button>
+    <button class="tablink" onclick="openCity('Variety', this, 'blue')">Variety</button>
+    <button class="tablink" onclick="openCity('Order', this, 'red')">Place Order</button>
+    <button class="tablink" onclick="openCity('OrderCustomize', this, 'green')">Customize</button>
+    <button class="tablink" onclick="openCity('OrderReview', this, 'blue')">Order Review</button>
+    <button class="tablink" onclick="openCity('PaymentScrn', this, 'orange')">Payment Options</button>
+  </div>
+<!--  Content Divs  -->
+  <div id="Brand" class="tabcontent">
+    <h3>The AJ Brand</h3>
+    <p>London is the capital city of England.</p>
+  </div>
+  <div id="CoffeeShop" class="tabcontent">
+    <h3>AJs Coffee Shop</h3>
+    <p>Paris is the capital of France.</p>
+  </div>
+  <div id="Variety" class="tabcontent">
+    <h3>Coffee Range:</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="Order" class="tabcontent">
+    <h3>What Can We Get For You?</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="OrderCustomize" class="tabcontent">
+    <h3>Add Some Personality!</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="OrderReview" class="tabcontent">
+    <h3>Have We Got It Right So Far?</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+  <div id="PaymentScrn" class="tabcontent">
+    <h3>Payment</h3>
+    <p>Tokyo is the capital of Japan.</p>
+  </div>
+</body>
+</html>
