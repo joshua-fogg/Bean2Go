@@ -1,59 +1,226 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <!--  FONT    -->
-    <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
-    <title> BeanGo </title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <!--  FONT   -->
+  <link href="https://fonts.googleapis.com/css?family=Rakkas" rel="stylesheet">
+  
+<style>
+div{
+  border:1px solid red;
+}
+
+/* Top-navBar*/
+
+.banner {
+  list-style-type: none;
+  margin: 4% 50% 5% 3%;
+  padding: 0 5% 0 5%;
+  overflow: hidden;
+  background-color: #333;
+  float: left;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+/*---- Logo---- */
+svg {
+  margin-right: 2%;
+  float: left;
+}
+
+.st3 {
+  stroke-dasharray: 920;
+  stroke-dashoffset: -920;
+  animation: draw-st3 3s infinite;
+  transform-origin: 50% 50%;
+}
+
+.st2 {
+  stroke-dasharray: 615;
+  stroke-dashoffset: -615;
+  animation: draw-st2 3s infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes draw-st3 {
+  from {
+    stroke-dashoffset: -920;
+    transform: rotat(0deg);
+  }
+  to {
+    stroke-dashoffset: 0;
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes draw-st2 {
+  from {
+    stroke-dashoffset: -615;
+    transform: rotate(0deg);
+  }
+  to {
+    stroke-dashoffset: 0;
+    transform: rotate(360deg);
+  }
+}
+
+/* -----Side Nav---- */
+
+.sideNav {
+  width: 30%;
+  height: 100%;
+  float: left;
+}
+/* Style the div.tab */
+.tab {
+  float: left;
+  position: constant;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  width: auto;
+  height: auto;
+  margin-bottom:auto;
+}
+.tab a{
+  text-decoration: none;
+}
+/* Style the Divs inside the tab */
+.tablink {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 22px 16px;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tablink:hover {
+  background-color: lightgrey;
+}
+
+/* Create an active/current "tab button" class */
+.tablink.active {
+  background-color: black;
+  
+}
+
+/*---- CONTENT ----*/
+.Content {
+  float: right;
+  width: auto;
+  padding: 5px;
+  margin:5%;
+  
+}
+/* Style the tab content */
+.tabcontent {
+  float: none;
+  padding: 0px 12px;
+  border: 1px solid grey;
+  width: 300px;
+  border-left: none;
+  height: 300px;
+}
+
+</style>
+  <link>
+  <title> BeanGo </title>
+</head>
+
 <body>
+    <!--  B2GBannerNav  -->
+    <div id="B2GBanner">
+      <!-- logo -->
+      <div id="AJLogo">
+        <svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 300 300">
+  <style>
+    .st0{fill:#C69C6D;} .st1{fill:#FFFFFF;} .st2{fill:none;stroke:#42210B;stroke-width:5;stroke-miterlimit:10;} .st3{fill:none;stroke:#C69C6D;stroke-width:5;stroke-miterlimit:10;}
+  </style>
+  <ellipse class="st0" cx="150.5" cy="144" rx="78.5" ry="74"/>
+  <path class="st1" d="M112.8 110.1h18.9l29.8 64.4h-24.8l-2.6-5.8h-23.8l-2.6 5.8H83l29.8-64.4zm-12.2 56.7l2.2-4.8h38.9l2.2 4.8h3.3l-22.8-49H120l-22.8 49h3.4zm21.7-46.7l18.4 39.5h-36.8l18.4-39.5zm5.3 34.4l-5.3-11.3-5.3 11.3h10.6zM163.3 159.1h8.6c2.5 0 4.2-.4 5.1-1.2.9-.8 1.3-1.9 1.3-3.3v-44.5h25.9v48.1c0 6-1.7 10.2-5 12.7-3.3 2.4-8.7 3.7-16 3.7h-19.9v-15.5zm19 7.7c3.9 0 6.6-.7 8.1-2.1 1.6-1.4 2.4-3.5 2.4-6.2v-40.7h-3.2v40.7c0 2-.4 3.5-1.3 4.5s-2.9 1.5-6 1.5h-9.6v2.3h9.6z"/>
+  <path class="st2" d="M101 235.5l-50.5-90 50.5-90h101l50.5 90-50.5 90z"/>
+  <path class="st3" d="M38.5 35.5h227v229h-227z"/>
+</svg>
+      </div>
+      <!-- /logo -->
+      
+      <!-- Top-navBar -->    
+      <div id="B2GoNav">
+        <nav>
+          <ul class="banner">
+            <li><a href="#home">Bean2Go</a></li>
+            <li><a href="#news">Client</a></li>
+            <li><a href="#contact">Business Owners</a></li>
+            <li><a href="#about">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- /B2GoNAv  -->
+    </div>
+    <!-- /B@2GBanner  -->
 
-  <!--  Banner  -->
- <div class="banner">
-  <a href="#home">Bean2Go</a>
-  <a href="#news">Client</a>
-  <a href="#contact">Business Owners</a>
-  <a href="#about">Contact</a>
-</div>
+    <!--  Side Nav -->
+    <div class="sideNav">
+      <div class="tab">
+        <a href="#Brand"><div class ="tablink">Brand</div></a>
+          <a href="#CoffeeShop"><div class ="tablink">Coffee Shop</div></a>
+          <a href="#Variety"><div class ="tablink">Variety</div></a>
+        <a href="#Order"><div class ="tablink">Order</div></a>
+          <a href="#OrderCustomize"><div class ="tablink">Order Customize</div></a>
+          <a href="#OrderReview"><div class ="tablink">Order Review</div></a>
+          <a href="#Payment"><div class ="tablink">Payment</div></a>
+      </div>
+    </div><!-- /Side NAV -->
 
-
-  <!--  Navigation Bar -->
-  <div class="tab">
-    <button class="tablink" onclick="openCity('Brand', this, 'red')"id="defaultOpen">Brand</button>
-    <button class="tablink" onclick="openCity('CoffeeShop', this, 'green')">Coffee Shop</button>
-    <button class="tablink" onclick="openCity('Variety', this, 'blue')">Variety</button>
-    <button class="tablink" onclick="openCity('Order', this, 'red')">Place Order</button>
-    <button class="tablink" onclick="openCity('OrderCustomize', this, 'green')">Customize</button>
-    <button class="tablink" onclick="openCity('OrderReview', this, 'blue')">Order Review</button>
-    <button class="tablink" onclick="openCity('PaymentScrn', this, 'orange')">Payment Options</button>
-  </div>
-<!--  Content Divs  -->
-  <div id="Brand" class="tabcontent">
-    <h3>The AJ Brand</h3>
-    <p>London is the capital city of England.</p>
-  </div>
-  <div id="CoffeeShop" class="tabcontent">
-    <h3>AJs Coffee Shop</h3>
-    <p>Paris is the capital of France.</p>
-  </div>
-  <div id="Variety" class="tabcontent">
-    <h3>Coffee Range:</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-  <div id="Order" class="tabcontent">
-    <h3>What Can We Get For You?</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-  <div id="OrderCustomize" class="tabcontent">
-    <h3>Add Some Personality!</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-  <div id="OrderReview" class="tabcontent">
-    <h3>Have We Got It Right So Far?</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-  <div id="PaymentScrn" class="tabcontent">
-    <h3>Payment</h3>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
+    <!--  Content Divs  -->
+    <div class="Content">
+      <div id="Brand" class="tabcontent">
+        <h3>The AJ Brand</h3>
+        <p>London is the capital city of England.</p>
+      </div>
+      <div id="CoffeeShop" class="tabcontent">
+        <h3>AJs Coffee Shop</h3>
+        <p>Paris is the capital of France.</p>
+      </div>
+      <div id="Variety" class="tabcontent">
+        <h3>Coffee Range:</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <div id="Order" class="tabcontent">
+        <h3>What Can We Get For You?</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <div id="OrderCustomize" class="tabcontent">
+        <h3>Add Some Personality!</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <div id="OrderReview" class="tabcontent">
+        <h3>Have We Got It Right So Far?</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+      <div id="Payment" class="tabcontent">
+        <h3>Payment</h3>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+    </div><!-- content div -->
 </body>
+
 </html>
