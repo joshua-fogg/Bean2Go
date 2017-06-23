@@ -1,38 +1,46 @@
-
-div{
-  border:1px solid red;
+body {
+  background-image:url("http://wallpapercraft.net/wp-content/uploads/2016/05/Download-Desktop-Coffee-Backgrouns.jpg");
+  margin: 0;
+  padding: 0;
+  font-size: 25px;
+  font-family: Arial, Verdana, sans-serif;
+  font-weight: bold;
 }
 
-/* Top-navBar*/
 
-.banner {
-  list-style-type: none;
-  margin: 4% 50% 5% 3%;
-  padding: 0 5% 0 5%;
+nav {
+  float: 0;
   overflow: hidden;
-  background-color: #333;
-  float: left;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
   text-align: center;
-  padding: 14px 16px;
+  margin-top: 50px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  list-style-type: none;
+}
+nav > ul > li > a {
+  text-decoration: none;
+  color:#452317;
+  line-height: 2em;
+  padding: 0.5em 1em;
   text-decoration: none;
 }
 
-li a:hover {
-  background-color: #111;
+
+/* --- logo ---*/
+.logo {
+  position: relative;
+  margin:10px 15px 15px 10px;
+  float:left;
 }
-/*---- Logo---- */
-svg {
-  margin-right: 2%;
-  float: left;
+.bg-div {
+  overflow: hidden;
 }
 
 .st3 {
@@ -69,67 +77,4 @@ svg {
     stroke-dashoffset: 0;
     transform: rotate(360deg);
   }
-}
-
-/* -----Side Nav---- */
-
-.sideNav {
-  width: 30%;
-  height: 100%;
-  float: left;
-}
-/* Style the div.tab */
-.tab {
-  float: left;
-  position: constant;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
-  width: auto;
-  height: auto;
-  margin-bottom:auto;
-}
-.tab a{
-  text-decoration: none;
-}
-/* Style the Divs inside the tab */
-.tablink {
-  display: block;
-  background-color: inherit;
-  color: black;
-  padding: 22px 16px;
-  border: none;
-  outline: none;
-  text-align: left;
-  cursor: pointer;
-  transition: 0.3s;
-  font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tablink:hover {
-  background-color: lightgrey;
-}
-
-/* Create an active/current "tab button" class */
-.tablink.active {
-  background-color: black;
-
-}
-
-/*---- CONTENT ----*/
-.Content {
-  float: right;
-  width: auto;
-  padding: 5px;
-  margin:5%;
-
-}
-/* Style the tab content */
-.tabcontent {
-  float: none;
-  padding: 0px 12px;
-  border: 1px solid grey;
-  width: 300px;
-  border-left: none;
-  height: 300px;
 }
