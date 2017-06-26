@@ -1,0 +1,19 @@
+
+
+
+Forum / blog on coffee:
+	- Producers
+	- Infographics
+	- NZ Industry
+	- Coffee 101 Knowledge
+
+
+
+Alternative; Bean2Go
+	- Uberlike coffee ordering system for coffee trucks.
+	- Allows coffee trucks to advertise locations.
+	- Can request coffee truck
+	- Estimated wait times
+
+
+
