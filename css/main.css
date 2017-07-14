@@ -78,3 +78,7 @@ nav > ul > li > a {
     transform: rotate(360deg);
   }
 }
+#coffeelist{
+  max-width: 80%;
+  margin: auto;
+}
