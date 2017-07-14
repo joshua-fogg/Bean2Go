@@ -1,0 +1,47 @@
+/* Adding the CSS style */
+
+svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.st3 {
+  stroke-dasharray: 920;
+  stroke-dashoffset: -920;
+  animation: draw-st3 3s infinite;
+  transform-origin: 50% 50%;
+}
+
+.st2 {
+  stroke-dasharray: 615;
+  stroke-dashoffset: -615;
+  animation: draw-st2 3s infinite;
+  transform-origin: 50% 50%;
+}
+
+@keyframes draw-st3 {
+  from {
+    stroke-dashoffset: -920;
+    transform: rotat(0deg);
+  }
+  to {
+    stroke-dashoffset: 0;
+    transform: rotate(720deg);
+  }
+}
+
+@keyframes draw-st2 {
+  from {
+    stroke-dashoffset: -615;
+    transform: rotate(0deg);
+  }
+  to {
+    stroke-dashoffset: 0;
+    transform: rotate(360deg);
+  }
+}
+
