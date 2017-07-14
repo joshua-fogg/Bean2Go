@@ -1,0 +1,13 @@
+{
+  "coffee": {
+    "Black": 3.9,
+    "Americano": 3.9,
+    "Machiato": 3.9,
+    "Picolo": 4.0,
+    "Flat White": 4.50,
+    "Cappucino": 4.5,
+    "Latte": 4.7,
+    "Mochaccino": 5.0,
+    "Hot Chocolate": 5.0
+  }
+}
