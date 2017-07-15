@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script type="text/javascript">
+    function searchCoffe() {
+      var input = document.getElementById('realtxt').value.toLowerCase();
+      var out = document.getElementById('realitem').options;
+      for (i = 0; i < output.length; i++) {
+        if (output[i].value.indexOf(input) == 0) {
+          output[i].selected = true;
+        }
+
+        if (document.getElementById('realtxt'.value == '')) {
+          output(0).selected = true;
+        }
+      }
+
+    }
+  </script>
+</head>
+
+<body>
+  <form>
+    <input type="text" id="realitem" onkeyup="searchCoffe()">
+    <select id="realitem">
+
+  <option value=" "></option>
+  <option value="Delissimo">Delissimo</option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value"C">C</option>
+
+  </select>
+  </form>
+
+
+</body>
+
+</html>
